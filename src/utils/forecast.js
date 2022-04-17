@@ -13,8 +13,8 @@ const url='http://api.weatherstack.com/current?access_key=afd1864b7a25ea30522c92
         }else{
             callback(undefined,{
                 location: body.location.name,
-                weather: body.current.weather_descriptions +".  It is currently "+body.current.temperature+ " degrees out. It feels like "+body.current.feelslike+" degrees out."
-             })
+                weather: body.current.weather_descriptions +".  It is currently "+body.current.temperature+ " degrees out. It feels like "+body.current.feelslike+" degrees out. The humidity is"+body.current.humidity+"%."
+         } )
         }
 
     }
